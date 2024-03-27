@@ -30,6 +30,11 @@ function Limpiar() {
     document.getElementById("cantidad").value = "0";
     document.getElementById("producto").value = "";
     document.getElementById("tamanio").value = "";
+    
+    var tabla = document.getElementById("registro");
+    while (tabla.rows.length > 1) {
+    tabla.deleteRow(1);
+    }
 }
 
 function registrarProducto() {
